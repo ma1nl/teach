@@ -10,32 +10,34 @@ def repeatable_input(num: int) -> int:
 
 def is_valid_num(number: str, num: int) -> bool:
     '''Если введенном числе нету символов и букв возращает True или False'''
-    number = number.replace(' ', '')
+    number = number.strip()
     if number.isdigit() or number.isdecimal() == False:
         return 1 <= int(number) <= num
+    else:
+        return False
 
 def is_valid_word(result: str) -> bool:
     '''Проверяет, корректно ли введено слово'''
-    result = result.lower().replace(' ', '')
+    result = result.lower().strip()
     return result in ['да', 'нет']
 
 def change_guess_range(result: str) -> int:
     '''Позволяет изменить диапазон числа для угадывания'''
     while not is_valid_word(result):
         print(simple_colors.red('Я тебя непонял повтори'))
-        result = input(simple_colors.yellow('Хочешь изменить диапазон чисел для угадывания? (да/нет): ')).lower().replace(' ', '')
+        result = input(simple_colors.yellow('Хочешь изменить диапазон чисел для угадывания? (да/нет): ')).lower().strip()
     if result == 'да':
         num = input(simple_colors.yellow('Тогда, введи число: '))
         while not num.isdigit():
             num = input(simple_colors.yellow('Введи целочисленное число: '))
         return int(num)
-    elif result == 'нет':
+    else:
         return 100
         
 def game():
     tries = 0
     print(simple_colors.magenta('Добро пожаловать в числовую угадайку \nПо умолчанию диапазон чисел от 1 до 100'))
-    result = input(simple_colors.yellow('Хочешь изменить диапазон чисел для угадывания? (да/нет): ')).lower().replace(' ', '')
+    result = input(simple_colors.yellow('Хочешь изменить диапазон чисел для угадывания? (да/нет): ')).lower().strip()
     num = change_guess_range(result)
     required_number = random.randint(1, num)
     print()
