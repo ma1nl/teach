@@ -35,17 +35,16 @@
 # number =int(input())
 # print(f'{number:,}')
 
-number = list(input()[::-1])
-lenght = len(number)
-if len(number) > 5:
-    add = 0
-    for i in range(3, len(number), 3):
-        number.insert(i + add, ',')
-        add += 1
-
-    print(''.join(number[::-1]))
-if len(number) > 3 and len(number) < 6:
-    number.insert(3, ',')
-    print(''.join(number[::-1]))
-if len(number) < 4:
-    print(''.join(number[::-1]))
+# number = list(input()[::-1])
+# lenght = len(number)
+# if len(number) > 5:
+#     add = 0
+#     for i in range(3, len(number), 3):
+#         number.insert(i + add, ',')
+#         add += 1
+#     print(''.join(number[::-1]))
+# if len(number) > 3 and len(number) < 6:
+#     number.insert(3, ',')
+#     print(''.join(number[::-1]))
+# if len(number) < 4:
+#     print(''.join(number[::-1]))
