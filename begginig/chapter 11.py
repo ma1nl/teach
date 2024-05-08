@@ -12,18 +12,6 @@
 # numbers.extend([7, 17, 777])
 # print(numbers)
 
-# numbers = [2, 6, 3, 14, 10, 4, 11, 16, 12, 5, 4, 16, 1, 0, 8, 16, 10, 10, 8, 5, 1, 11, 10, 10, 12, 0, 0, 6, 14, 8, 2, 12, 14, 5, 6, 12, 1, 2, 10, 14, 9, 1, 15, 1, 2, 14, 16, 6, 7, 5]
-# print(len(numbers))
-# print(numbers[-1])
-# print(numbers[::-1])
-# qua = 'NO'
-# if 5 and 17 in numbers:
-#     qua ='YES'
-# print(qua)
-# del numbers[0]
-# del numbers[-1]
-# print(numbers)
-
 # n = int(input())
 # words = []
 # for i in range(n):
@@ -273,10 +261,10 @@
 
 # a = [1, 7, -3, 9, 0, -67, 34, 12, 45, 1000, 6,  8, -2, 99]
 # n = len(a)
-# for i in range(1, n): 
+# for i in range(1, n):
 #     elem = a[i]  # берем первый элемент из неотсортированной части списка
 #     j = i
-    
+
 #     # пока элемент слева существует и больше нашего текущего элемента
 #     while j >= 1 and a[j - 1] > elem:
 #         # смещаем j-й элемент отсортированной части вправо
@@ -311,7 +299,11 @@
 #     if len(num_phone) == 12 and num_phone[3] == '-' and num_phone[7] == '-':
 #         cnt += 1
 # elif num_phone.count('-') == 3:
-#     if num_phone[0] == '7' and len(num_phone) == 14 and num_phone[1] == '-' and num_phone[5] == '-' and num_phone[9] == '-':
+# if num_phone[0] == '7'
+# and len(num_phone) == 14
+# and num_phone[1] == '-'
+# and num_phone[5] == '-'
+# and num_phone[9] == '-':
 #         cnt += 1
 # if cnt == 2:
 #     print('YES')

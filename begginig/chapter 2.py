@@ -96,7 +96,7 @@
 # third = str(numb % 10)
 # second = str(numb // 10 % 10)
 # first = str(numb // 100 % 10)
-# print(first+second+third, 
+# print(first+second+third,
 #       first+third+second,
 #       second+first+third,
 #       second+third+first,
@@ -120,7 +120,7 @@
 # print('*****************', sep='')
 
 # a, b = int(input()), int(input())
-# print('Квадрат суммы', a, 'и', b, 'равен', (a+b)**2) 
+# print('Квадрат суммы', a, 'и', b, 'равен', (a+b)**2)
 # print('Сумма квадратов', a, 'и', b, 'равна', a**2+b**2)
 
 # a, b, c, d = int(input()), int(input()), int(input()), int(input())

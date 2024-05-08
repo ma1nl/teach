@@ -264,7 +264,7 @@
 # if cnt == 2:
 #     print("Correct")
 # else:
-#     print("Incorrect") 
+#     print("Incorrect")
 
 # num = int(input())
 # for i in range(1, num + 1):
@@ -279,7 +279,7 @@
 # number_letters = number[0] + number[4:6]
 # cnt = 0
 # digit = number[-1:6:-1]
-# if number[6] == '_': 
+# if number[6] == '_':
 #     cnt += 1
 # if 9 <= len(number) <= 10:
 #     cnt += 1
@@ -298,7 +298,7 @@
 # current_weight = 100 - (day * 0.2)
 # if weight <= current_weight:
 #     print('Все идет по плану')
-#     print(f'#{day} ДЕНЬ: ТЕКУЩИЙ ВЕС = {weight} кг, ЦЕЛЬ по ВЕСУ = {current_weight} кг') 
+#     print(f'#{day} ДЕНЬ: ТЕКУЩИЙ ВЕС = {weight} кг, ЦЕЛЬ по ВЕСУ = {current_weight} кг')
 # else:
 #     print('Что-то пошло не так')
 #     print(f'#{day} ДЕНЬ: ТЕКУЩИЙ ВЕС = {weight} кг, ЦЕЛЬ по ВЕСУ = {current_weight} кг')

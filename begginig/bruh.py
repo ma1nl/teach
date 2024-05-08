@@ -6,12 +6,11 @@
 # num(spisok, 3, 4)
 # print(spisok)
 
-# result = 'та' 
+# result = 'та'
 # if result in ['да', 'нет']:
 #     answer = True
-# else:    
+# else:
 #     answer = False
 # print(answer)
 
 # print('\x1B[1;3mУдачи!\x1B[0m \x1B[3mУвидимся\x1B[0m \x1B[1mв другой раз.\x1B[0m')
-

@@ -54,8 +54,8 @@
 
 # def quick_merge(list1, list2):
 #     result = []
-#     p1 = 0 
-#     p2 = 0 
+#     p1 = 0
+#     p2 = 0
 #     while p1 < len(list1) and p2 < len(list2):
 #         if list1[p1] <= list2[p2]:
 #             result.append(list1[p1])
@@ -67,7 +67,7 @@
 #         result += list1[p1:]
 #     else:
 #         result += list2[p2:]
-    
+
 #     return result
 
 # total_list = []
@@ -215,7 +215,7 @@
 # from math import pi
 # def get_circle(radius):
 #     length = 2 * pi * radius
-#     square = pi * (radius ** 2) 
+#     square = pi * (radius ** 2)
 #     return length, square
 
 # r = float(input())
@@ -288,14 +288,19 @@
 #             number = [dec[digits[0]], dig[digits[1]]]
 #             number = ' '.join(number)
 #             return number
-    
+
 # n = int(input())
 # print(number_to_words(n))
 
 
 # def get_month(language, number):
-#     lng_ru = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
-#     lng_en = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+# lng_ru = [
+# 'январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'
+#     ]
+# lng_en = [
+# 'january', 'februar', 'march', 'april', 'may', 'june', 'jul', 'august', 'september', 'october', 'november', 'december'
+#     ]
+
 #     if language == 'ru':
 #         return lng_ru[number - 1]
 #     elif language == 'en':
@@ -318,7 +323,9 @@
 
 
 # def is_pangram(text: str):
-#     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# letters = [
+# 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v'
+# ]
 #     text = text.split()
 #     text = ''.join(text)
 #     for i in letters:
