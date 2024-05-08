@@ -14,4 +14,43 @@
 # pennies = total_cost % 100
 # print(f'{rubles} р. {pennies} коп.')
 
-print(len([i for i in input().split()]))
+# print(len([i for i in input().split()]))
+
+# year = int(input())
+# animals = ["Обезьяна", "Петух", "Собака", "Свинья", "Крыса", "Бык", "Тигр", "Заяц", "Дракон", "Змея", "Лошадь", "Овца"]
+# current_animal = year % 12
+# print(animals[current_animal]) 
+
+# number = input()
+# if len(number) == 5 and number[-1] == '0':
+#     number = number.replace('0', '')
+#     number = number[-1:-6:-1]
+# elif len(number) == 5:
+#     number = number[-1:-6:-1]
+# elif len(number) == 6:
+#     number = number[0] + number[-1:-6:-1]
+# print(number)
+
+# number =int(input())
+# print(f'{number:,}')
+
+number = list(input()[::-1])
+lenght = len(number)
+if len(number) > 5:
+    add = 0
+    for i in range(3, len(number), 3):
+        number.insert(i + add, ',')
+        add += 1
+    # number.insert(3, ',')
+    # index = number.index(',')
+    # add = 4
+    # while index < lenght:
+    #     number.insert(index + add, ',')
+    #     index = number.index(',', index + 1)
+    #     add += 1
+    print(''.join(number[::-1]))
+if len(number) > 3 and len(number) < 6:
+    number.insert(3, ',')
+    print(''.join(number[::-1]))
+if len(number) < 4:
+    print(''.join(number[::-1]))
