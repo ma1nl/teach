@@ -6,17 +6,19 @@ def random_word():
         return random.choice(f.readlines()).replace('\n', '').replace('ё', 'e')
 
 
-def print_keyboard(available_letters: list):
+def print_keyboard(unavailable_letters=[]):
     keyboard = ['йцукенгшщзхъ', 'фывапролджэ', 'ячсмитьбю']
     for index, line in enumerate(keyboard):
         print(' ' * index, end='')
         for letter in line:
+            if letter in unavailable_letters:
+                letter = '_'
             print(letter, end=' ')
         print()
 
 
 def main():
-    print_keyboard(None)
+    print_keyboard()
 
 
 if __name__ == '__main__':
