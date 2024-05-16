@@ -48,3 +48,16 @@
 #     print(''.join(number[::-1]))
 # if len(number) < 4:
 #     print(''.join(number[::-1]))
+
+iteration = int(input())
+cnt_1, cnt_2, cnt_3, cnt_4 = 0, 0, 0, 0
+for i in range(iteration):
+    xy = input().split()
+    list_xy = xy.append()
+for i in range(iteration):
+    if int(list_xy[i][0]) > 0 and int(list_xy[i][1]) > 0:
+        cnt_1 += 1
+    elif int(list_xy[i][0]) < 0 and int(list_xy[i][1]) > 0:
+        cnt_2 += 1
+    elif int(list_xy[i][0]) < 0 and int(list_xy[i][1]) < 0:
+        
