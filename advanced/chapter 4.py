@@ -72,3 +72,39 @@
 #     else:
 #         lst_sblst.append([text[i]])
 # print(lst_sblst)
+
+
+# def chuncked(source_list: str, step: str) -> list:
+#     source_list = source_list.split()
+#     if len(source_list) < step:
+#         target_list = [source_list]
+#     else:
+#         target_list = [[] for _ in range((len(source_list) // step) + (len(source_list) % step))]
+#         for i in range(len(source_list)):
+#             target_index = i // step
+#             target_list[target_index].append(source_list[i])
+
+#     return target_list
+
+# source_list = input()
+# step = int(input())
+# print(chuncked(source_list, step))
+
+
+# source_list = input().split()
+# target_list = [[]]
+# for i in range(len(source_list)):
+#     for j in range(len(source_list) - i):
+#         target_list.append(source_list[j:j + i + 1])
+# print(target_list)
+
+
+n = 3
+a = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+
+for i in range(n):
+    for j in range(n):
+        print(a[n - i - 1][n - j - 1], end=' ')
+    print()
